@@ -40,7 +40,7 @@ function Signup() {
 			})
 			.catch(err => {
 				if (err.response) {
-					toast.error("Error:" + err.response.data.message, { duration: 3000 });
+					toast.error("Error:" + err.response.data.message, { duration: 1000 });
 				}
 			});
 		reset();
