@@ -14,7 +14,12 @@ dotenv.config();
 const app = express();
 
 // --- Middlewares ---
-app.use(cors());
+// allow frontend domain (temporary: "*" for testing, later replace with your Render frontend URL)
+app.use(cors({
+  origin: "*",
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  credentials: true
+}));
 app.use(express.json());
 
 // --- Config ---
@@ -27,7 +32,7 @@ const connectDB = async () => {
     await mongoose.connect(MONGO_URI);
     console.log("✅ Connected to MongoDB");
   } catch (error) {
-    console.error("❌ Error connecting to MongoDB:", error);
+    console.error("❌ Error connecting to MongoDB:", error.message);
     process.exit(1);
   }
 };
@@ -37,23 +42,21 @@ connectDB();
 app.use("/book", bookRouter);
 app.use("/user", userRouter);
 
-// --- Serve React build ---
+// --- Serve React build (frontend/dist) ---
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// IMPORTANT: folder name must match your repo exactly → "frontend"
 const clientDistPath = path.join(__dirname, "../frontend/dist");
-
 app.use(express.static(clientDistPath));
+
 app.get("*", (_req, res) => {
   res.sendFile(path.join(clientDistPath, "index.html"));
 });
 
 // --- Start server ---
-app.listen(PORT, () => {
+app.listen(PORT, "0.0.0.0", () => {
   console.log(`🚀 Server running on port ${PORT}`);
 });
-
 
 
 // import express from "express";
