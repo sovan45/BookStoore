@@ -27,7 +27,7 @@ function Signup() {
 			password: data.password
 		};
 
-		await axios.post("http://localhost:4001/user/signup", UserInfo)
+		await axios.post(`${import.meta.env.VITE_API_URL}/user/signup`, UserInfo)
 			.then(res => {
 				console.log("User data from signup cmp if pass", res.data);
 				if (res.data) {
