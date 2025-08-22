@@ -1,14 +1,13 @@
 {
-  "name": "backend",
+  "name": "mern-project",
   "version": "1.0.0",
-  "description": "mern project",
-  "main": "index.js",
+  "description": "MERN project",
+  "main": "Backend/index.js",
   "type": "module",
   "scripts": {
     "dev": "nodemon Backend/index.js",
     "start": "node Backend/index.js",
-    "build": "npm install && npm install --prefix Frontend && npm run build --prefix Frontend",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "cd frontend && npm install && npm run build"
   },
   "repository": {
     "type": "git",
