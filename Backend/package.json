@@ -1,0 +1,33 @@
+{
+  "name": "mern-project",
+  "version": "1.0.0",
+  "description": "MERN project",
+  "main": "Backend/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon Backend/index.js",
+    "start": "node Backend/index.js",
+    "install-backend": "cd Backend && npm install",
+    "build": "cd frontend && npm install && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sovan45/BookstoreApp.git"
+  },
+  "author": "sovanbera",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sovan45/BookstoreApp/issues"
+  },
+  "homepage": "https://github.com/sovan45/BookstoreApp#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.9.6"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
