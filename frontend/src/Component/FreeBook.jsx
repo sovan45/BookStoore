@@ -19,7 +19,7 @@ function FreeBook() {
 		const getBook = async () => {
 			try {
 				
-				const res = await axios.get("http://localhost:4001/book");
+				const res = await axios.get("https://bookstoore-2.onrender.com/book");
 				console.log("Fetched Data[before Sortlist]:", res.data);  // ✅ Debug: Log full data
 				const filteredBooks = res.data.filter((data) => data.category.trim().toLowerCase() === "free");
 				console.log("Filtered Data:", filteredBooks); // ✅ Debug: Log filtered data
