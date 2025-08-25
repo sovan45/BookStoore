@@ -10,7 +10,15 @@ function Banner() {
 						  Hello, Welcome Here to learn Something<span className="text-pink-600"> New Everyday!!!</span>
 					  </h1>
 					  <p className="text-xl ">
-						  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+						  📖 Welcome to Bookstoore
+
+						  Discover a world of stories, knowledge, and imagination. At Bookstoore, we bring you a carefully curated collection of free and premium books to suit every reader’s taste.
+
+						  ✨ Free Books – Explore a wide range of titles at no cost, open for everyone to enjoy.
+
+						  🔒 Premium Books – Unlock exclusive reads by logging in to your account. Experience deeper insights, bestselling titles, and premium content available only to our registered readers.
+
+						  Whether you’re here to enjoy timeless classics or the latest releases, Bookstoore is designed to give you a smooth and enriching reading experience.
 					  </p>
 
 					  
