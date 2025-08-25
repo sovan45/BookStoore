@@ -10,9 +10,15 @@ function About() {
 
 				{/* Description */}
 				<p className="text-gray-600 leading-relaxed mb-4">
-					Welcome to our platform! We are dedicated to providing the best services to our users,
-					ensuring a seamless and efficient experience. Our goal is to bring innovation and excellence
-					in everything we do.
+					📖 Welcome to Bookstoore
+
+					Discover a world of stories, knowledge, and imagination. At Bookstoore, we bring you a carefully curated collection of free and premium books to suit every reader’s taste.
+
+					✨ Free Books – Explore a wide range of titles at no cost, open for everyone to enjoy.
+
+					🔒 Premium Books – Unlock exclusive reads by logging in to your account. Experience deeper insights, bestselling titles, and premium content available only to our registered readers.
+
+					Whether you’re here to enjoy timeless classics or the latest releases, Bookstoore is designed to give you a smooth and enriching reading experience.
 				</p>
 
 				<p className="text-gray-600 leading-relaxed mb-4">
